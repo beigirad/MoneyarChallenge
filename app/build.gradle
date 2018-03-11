@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        def majorVersion = 0
+        def minorVersion = 1
+        def patchVersion = 19
+
+        applicationId "ir.beigirad.monenyarchallenge"
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode majorVersion * 10000 + minorVersion * 100 + patchVersion
+        versionName "${majorVersion}.${minorVersion}.${patchVersion}"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation rootProject.ext.libraries.appCompat
+    implementation rootProject.ext.libraries.design
+    implementation rootProject.ext.libraries.support
+    implementation rootProject.ext.libraries.cardView
+    implementation rootProject.ext.libraries.recyclerView
+    implementation rootProject.ext.libraries.circleImageView
+
+    implementation rootProject.ext.libraries.calligraphy
+    implementation rootProject.ext.libraries.constraintLayout
+
+    implementation rootProject.ext.kotlinDependencyJdk
+}

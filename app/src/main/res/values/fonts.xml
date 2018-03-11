@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_light">fonts/IRANYekanLightMobile.ttf</string>
+    <string name="font_bold">fonts/IRANYekanMobileBold.ttf</string>
+    <string name="font_regular">fonts/IRANYekanRegularMobile.ttf</string>
+</resources>

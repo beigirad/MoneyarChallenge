@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ir.beigirad.monenyarchallenge.widget.MyInputLayout
+        style="@style/PrimaryDarkText.LargeText.Bold"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_background"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:padding="4dp" />
+</FrameLayout>
